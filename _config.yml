@@ -5,9 +5,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               My 404s
+tagline:             Don't code and drive
+url:                 http://martinhjelm.github.io
 paginate:            1
 baseurl:             ""
 
@@ -20,9 +20,9 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Martin Hjelm
+  url:               http://martinhjelm.github.io/
+  email:             martinhjelm@kth.se
 
 # Custom vars
 version:             1.0.0
