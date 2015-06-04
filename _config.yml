@@ -1,20 +1,30 @@
-# General
-name: Minimal-Block
-description: "Minimalistic, friendly, responsive."
-url: http://localhost:4000
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
 
-markdown: redcarpet
-highlighter: pygments
+# Setup
+title:               Poole
+tagline:             The Jekyll Butler
+url:                 http://getpoole.com
+paginate:            1
+baseurl:             ""
 
-paginate: 5
-permalink: /:title
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
-# Social share and comments.
-disqus-id: yourusername
-twitter: yourusername
-github: yourusername
-google: +yourusername
+# About/contact
+author:
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
-# RSS feed
-rss-feed-limit: 10
-rss-show-full: "no"
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/poole/poole

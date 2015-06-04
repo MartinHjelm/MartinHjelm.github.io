@@ -1,29 +1,33 @@
 ---
 layout: default
+title: Home
 ---
 
-<section class="main-content">
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-    {% for post in paginator.posts %}
-        <article class="module color-3">
-                <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-                <span class="category">{{ post.categories | array_to_sentence_string }}</span>
-                <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
-        </article>
-    {% endfor %}
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    <div class="module pagination color-3">
-        {% if paginator.previous_page %}
-            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
-        {% endif %}
+    {{ post.content }}
+  </article>
+  {% endfor %}
+</div>
 
-        <span class="page_number">&mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;</span>
-
-        {% if paginator.next_page %}
-            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">Next</a>
-        {% endif %}
-    </div>
-
-</section>
-
-
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

@@ -1,130 +1,120 @@
-This theme stared out being a fork from the [Block-log](https://github.com/anandubajith/block-log). It still keeps many similarities. Minimal-block is a minimalistic, responsive and friendly Jekyllrb theme. It has almost no javascript (except for disquss), static social share buttons, rss, paginator, clean and simple permalinks and RSS.
+# Poole
+
+*The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
+
+-----
+
+Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
+
+![Poole](https://f.cloud.github.com/assets/98681/1834359/71ae4048-73db-11e3-9a3c-df38eb170537.png)
+
+See Poole in action with [the demo site](http://demo.getpoole.com).
+
+There are currently two official themes built on Poole:
+
+* [Hyde](http://hyde.getpoole.com)
+* [Lanyon](http://lanyon.getpoole.com)
+
+Individual theme feedback and bug reports should be submitted to the theme's individual repository.
 
 
-[Live Demo](http://drvy.github.io/minimal-block/)
+## Contents
 
-[Download](https://github.com/drvy/minimal-block/archive/master.zip)
-
-[Github Repository](https://github.com/drvy/minimal-block)
-
-
-![minimal-block preview](https://raw.githubusercontent.com/drvy/minimal-block/master/preview.png)
-
-Setting up
-----------------
-To start you own blog, simply git clone the repository on github.
-
-    git clone https://github.com/drvy/minimal-block.git
-
-Once cloned, edit the `_config.yml` file at the root of the repository.
-
-To add your own posts, add a file to the _posts directory. The file name has to follow the following structure.
-
-    year-month-day-title.md
-    2015-01-25-Hello-world.md
-
-The post doesn't have to be writen in markdown but it's recomended. Notice that the URL of the post will contain the “Hello-world” part so the title of the file must be URL friendly.
+- [Usage](#usage)
+- [Options](#options)
+  - [Rems, `font-size`, and scaling](#rems-font-size-and-scaling)
+- [Development](#development)
+- [Author](#author)
+- [License](#license)
 
 
-Things to change in `_config.yml`
-----------------
-This file contains the configuration of your blog. By default, it looks like this:
+## Usage
 
-    # General
-    name: Minimal-Block
-    description: "Minimalistic, friendly, responsive."
-    url: http://localhost:4000
+### 1. Install dependencies
 
-    markdown: redcarpet
-    highlighter: pygments
+Poole is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem:
 
-    paginate: 5
-    permalink: /:title
+```bash
+$ gem install jekyll
+```
 
-    # Social share and comments.
-    disqus-id: yourusername
-    twitter: yourusername
-    github: yourusername
-    google: +yourusername
+**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
 
-    # RSS feed
-    rss-feed-limit: 10
-    rss-show-full: "yes"
+**Need syntax highlighting?** Poole includes support for Pygments or Rouge, so install your gem of choice to make use of the built-in styling. Read more about this [in the Jekyll docs](http://jekyllrb.com/docs/templates/#code_snippet_highlighting).
 
-You will need to change `name` , `url` , `twitter`, `disqus-id`, `google` and `github`. All others are optional. Here is what the variables mean.
+### 2a. Quick start
 
-<table>
-<thead>
-    <tr><th>Name</th><th>Description</th></tr>
-</thead>
-<tbody>
-    <tr><td>name</td><td>The name of your jekyll site. The title.</td></tr>
-    <tr><td>description</td><td>Basic description. Sub-title.</td></tr>
-    <tr><td>url</td><td>Where will be the jekyll site. The main URL without the endind / (slash).</td></tr>
-    <tr><td>markdown</td><td>The preffered markdown parser to use.</td></tr>
-    <tr><td>highlighter</td><td>The syntax-highlighter to use. If not set, `highlights.css` will not be included.</td></tr>
-    <tr><td>paginate</td><td>How much posts to show per page.</td></tr>
-    <tr><td>permalink</td><td>The friendly urls of the post. `none` is the jekyll default.</td></tr>
-    <tr><td>disqus-id</td><td>The disqus ID. If not set, comments will not be shown.</td></tr>
-    <tr><td>twitter</td><td>Your twitter username (used while sharing).</td></tr>
-    <tr><td>github</td><td>Your github username.</td></tr>
-    <tr><td>google</td><td>Youre google+ username.</td></tr>
-    <tr><td>rss-feed-limit</td><td>How much entries to display in the feed.xml (rss).</td></tr>
-    <tr><td>rss-show-full</td><td>The show the full post or to put only the excerpt (yes | no).</td>
-</tbody>
-</table>
+To help anyone with any level of familiarity with Jekyll quickly get started, Poole includes everything you need for a basic Jekyll site. To that end, just download Poole and start up Jekyll.
 
-For more information on Jekyll, visit their [wiki on github](https://github.com/mojombo/jekyll/wiki). For more information on GitHub Pages visit [their site](http://pages.github.com).
+### 2b. Roll your own Jekyll site
+
+Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Poole and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `public/` for CSS, JS, etc.).
+
+### 3. Running locally
+
+To see your Jekyll site with Poole applied, start a Jekyll server. In Terminal, from `/Poole` (or whatever your Jekyll site's root directory is named):
+
+```bash
+$ jekyll serve
+```
+
+Open <http://localhost:4000> in your browser, and voilà.
+
+### 4. Serving it up
+
+If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
+
+1. Fork this repo and switch to the `gh-pages` branch.
+  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
+  2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/poole`, use `http://username.github.io/poole/`. **Be sure to include the trailing slash.**
+3. Done! Head to your GitHub Pages URL or custom domain.
+
+No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
+
+## Options
+
+Poole includes some customizable options, typically applied via classes on the `<body>` element.
 
 
-Writing posts.
-----------------
-Checkout the Jekyllrb [wiki](https://github.com/mojombo/jekyll/wiki) for documentation on writing posts. This theme
-makes use of static sharing buttons and they use a few tags that you should include in your posts.
-An example of a post header:
+### Rems, `font-size`, and scaling
 
-    ---
-    layout: post
-    title:  "minimal-block - A minimalistic responsive Jekyll theme"
-    date:   2015-01-25 00:00:00
-    categories: jekyll, themes
-    tags: jekyll, theme, minimal
-    shortUrl: http://goo.gl/JhfZT9
-    ---
+Poole is built almost entirely with `rem`s (instead of pixels). `rem`s are like `em`s, but instead of building on the immediate parent's `font-size`, they build on the root element, `<html>`.
 
-Most of these variables are just the default ones but the last two (`tags` and `shortUrl`) are used by the theme when sharing via the social buttons in the end of every post.
+By default, we use the following:
 
-Specifically, `tags` will be converted into hashtags when sharing on Twitter and if you supply a `shortUrl`, it will be used instead of the full url. This is useful if you are using [goo.gl](http://goo.gl) since they provide statistics for each short link and that way you can see how many people are sharing your post.
+```css
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+```
+
+To easily scale your site's typography and components, simply customize the base `font-size`s here.
 
 
-Pages and other files.
-----------------
-Each page has its own directory in the root folder of the theme. In each directory there is an index.html representing the contents of the page. Take a look at the default ones (about and contact) to see the structure.
+## Development
 
-Another file to know about is the `footer.html` as it has the copyright notice and credits. This file is located in the `_includes` folder. You can remove the credits if you want but I would love you if you give me some credit in the HTML source.
+Poole has two branches, but only one is used for active development.
 
-The `404` file is located in the root folder and it contains the exactly same structure as a page.
+- `master` for development.  **All pull requests should be to submitted against `master`.**
+- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
 
-License
-----------------
-The MIT License (MIT)
 
-    Copyright (c) 2015 Dragomir V Yordanov
+## Author
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
+**Mark Otto**
+- <https://github.com/mdo>
+- <https://twitter.com/mdo>
 
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
+## License
+
+Open sourced under the [MIT license](LICENSE.md).
+
+<3
