@@ -1,2 +1,0 @@
-# MartinHjelm.github.io
-BLOG
