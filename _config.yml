@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               My 404s
 tagline:             Don't code and drive
 url:                 http://martinhjelm.github.io
-paginate:            1
+paginate:            5
 baseurl:             ""
 
 # Assets
