@@ -1,3 +1,7 @@
+---
+layout: post
+title: Brew Commands for Checking Dependencies
+---
 To check which dependencies a particular formula has write 
      brew deps opencv
      ant atk autoconf automake bison boost...

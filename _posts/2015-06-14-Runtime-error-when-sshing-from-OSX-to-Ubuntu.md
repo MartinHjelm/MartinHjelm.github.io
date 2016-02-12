@@ -1,3 +1,7 @@
+---
+layout: post
+title: Runtime error when sshing from OSX to Ubuntu
+---
 Note to self. When ssh:ing from a Mac to Ubuntu and you get the following error
 
 terminate called after throwing an instance of 'std::runtime_error'
