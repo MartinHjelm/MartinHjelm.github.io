@@ -2,9 +2,11 @@
 layout: post
 title: Nifty i-Term Key Settings
 ---
-This short-cut will delete one word backwards using a non-alphanumeric character as the delimiter.
+In i-Term under preferences -> profiles -> keys we can set a number of useful key short cuts. 
 
-    alt+backspace hex: 0x1B 0x08
+To delete one word backwards using a non-alphanumeric character as the delimiter we set,
+
+**alt+backspace:** Hexcode: 0x1B 0x08
 
 That is, using alt+backspace on,
 
@@ -17,10 +19,10 @@ will remove,
     usr
     /
 
-For jumping one word backwards or forwards using a non-alphanumeric character as the delimiter, we can use, 
+For jumping one word backwards or forwards using a non-alphanumeric character as the delimiter, we use, 
 
-Alt + left: Send Escape Sequence, Esc + b
-Alt + right: Send Escape Sequence, Esc + f
+**Alt + left:** Send Escape Sequence: Esc + b
+**Alt + right:** Send Escape Sequence: Esc + f
 
 That is, using alt+left on,
 
