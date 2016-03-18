@@ -1,8 +1,8 @@
 ---
 layout: post
-title: i-Term Keyboard Shortcuts for Jumping Words 
+title: Terminal Keyboard Shortcuts for Jumping Words 
 ---
-In i-Term under preferences -> profiles -> keys we can set a number of useful key short cuts. 
+In i-Term under preferences -> profiles -> keys we can set a number of useful key short cuts for jumping/skipping/deleting keywords in the terminal. 
 
 To delete one word backwards using a non-alphanumeric character as the delimiter we set,
 
