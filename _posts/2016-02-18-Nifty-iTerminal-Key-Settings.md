@@ -19,12 +19,13 @@ will remove,
     usr
     /
 
-For jumping one word backwards or forwards using a non-alphanumeric character as the delimiter, we use, 
+For jumping one word backwards or forwards with the left and right arrowkeys  using a non-alphanumeric character as the delimiter, we use, 
 
 **Alt + left:** Send Escape Sequence: Esc + b
+
 **Alt + right:** Send Escape Sequence: Esc + f
 
-That is, using alt+left on,
+That is, using alt + left on,
 
     /usr/bin/python
 
