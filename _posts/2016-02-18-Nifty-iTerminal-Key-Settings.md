@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nifty i-Term Key Settings
+title: i-Term Keyboard Shortcuts for Jumping Words 
 ---
 In i-Term under preferences -> profiles -> keys we can set a number of useful key short cuts. 
 
