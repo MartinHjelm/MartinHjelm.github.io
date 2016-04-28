@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Python Numpy Check Commands
+title: Python Numpy Configuration Commands
 ---
-import numpy as np
-np.__config__.show()
-np.test('full', verbose=10)
+Lists the configuration of Numpy
+ 
+    import numpy as np
+    np.__config__.show()
+    np.test('full', verbose=10)
