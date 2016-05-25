@@ -6,6 +6,6 @@ Lets say you have a set of text files that contains column entry data, for examp
 
     paste file1.csv file2.csv | column  > X.txt
     
-If we want to remove the , ; \t or other that usually separates csv files we can tell column to create a table separated by a single space. Suppose the data in our csv files are separated by ; we can do 
+If we want to remove the , ; \t or anuy other character that usually separates csv files we can tell _column_ to create a table separated by white space. Suppose the data in our csv files are separated by ; we can do 
 
      paste file1.csv file2.csv | column -s ';' -t > X.txt
