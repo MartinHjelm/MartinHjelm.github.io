@@ -6,7 +6,7 @@ When debugging C++ using LLDB from the command line. It seems you have to put
     
     make DCMAKE_BUILD_TYPE=debug
 
-Just specifiying removing optimization flags and writing 
+Just removing optimization flags and writing 
 
     set(CMAKE_BUILD_TYPE Debug)
 
