@@ -10,4 +10,4 @@ Just removing optimization flags and writing
 
     set(CMAKE_BUILD_TYPE Debug)
 
-in the CMakeLists.txt does not seem to do the trick. Possibly this is because of underlying CMakeLists.txt hierarchies or some other parameters. Nevertheless, by using the DCMAKE_BUILD_TYPE parameter you get access to the otherwise, by optimization, hidden variables.    
+in the CMakeLists.txt does not seem to do the trick when there are underlying CMakeLists.txt hierarchies or some other parameters. Nevertheless, by using the DCMAKE_BUILD_TYPE parameter you get access to the otherwise, by optimization, hidden variables.    
