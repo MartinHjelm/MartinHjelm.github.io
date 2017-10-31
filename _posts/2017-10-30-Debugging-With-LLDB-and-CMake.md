@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When Debugging With LLDB and CMake Make Sure To Turn of Optimization
+title: When Debugging With LLDB and CMake Make Sure to Turn of Optimization
 ---
 When debugging C++ using LLDB from the command line. It seems you have to put 
     
