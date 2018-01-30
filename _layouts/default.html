@@ -13,6 +13,13 @@
         </h3>
       </header>
 
+      {% for page in site.pages %}
+          <a class="page-link" href="{% page.url | prepend: site.baseurl %}">
+            {% page.title %}
+          </a>
+      {% endfor %}
+
+
       <main>
         {{ content }}
       </main>
