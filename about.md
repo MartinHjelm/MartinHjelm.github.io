@@ -17,7 +17,7 @@ LinkedIn: [linkedin.com/in/martin-hjelm](https://www.linkedin.com/in/martin-hjel
 ### About Me
 I'm a Ph.D. student at KTH Royal Institute of Technology in Computer Science. My main research interests are robotics, machine learning, and computer vision. Specifically, my main research focus is on robotic grasping - learning robots to recognize patterns in categories of everyday objects that can be exploited to perform more efficient grasps of the objects that belong to the category.
 
-Before being in Academia I was a master student in Engineering Physics. I did my Master Thesis on image segmentation at TTI (Toyota Technological Institute) in Chicago under supervision of Raquel Urtasun. Prior to that I was at TU Berlin studying machine learning courses under professor Mannfred Opper and professor Klaus-Robert Muller.
+Before being in Academia I was a master student in Engineering Physics. I did my Master Thesis on image segmentation at TTI (Toyota Technological Institute) in Chicago under the supervision of Raquel Urtasun. Prior to that, I was at TU Berlin studying machine learning courses under professor Manfred Opper and professor Klaus-Robert Muller.
 
 And before my engineering studies, at the dawn of time, I was juggling music studies with being a web design freelancer doing stuff like [Bookle](http://www.bookle.se).
 
