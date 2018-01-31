@@ -11,13 +11,12 @@
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
         </h3>
+        {% for page in site.pages %}
+        {% if page.title == "About" %}
+        <a href="{{page.url}}" style="font-size:0.5em">{{page.title}}</a>
+        {% endif %}
+        {% endfor %}
       </header>
-
-      {% for page in site.pages %}
-          <a class="page-link" href="{% page.url | prepend: site.baseurl %}">
-            {% page.title %}
-          </a>
-      {% endfor %}
 
 
       <main>

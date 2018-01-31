@@ -7,7 +7,7 @@ tagline:             Don't code and drive
 url:                 http://martinhjelm.github.io
 paginate:            5
 baseurl:             ""
-
+encoding: 			 utf-8
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
@@ -22,11 +22,16 @@ author:
   email:             martinhjelm@kth.se
 
 # Custom vars
-version:             1.0.0
+version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
+
+commands:
+  - export LC_ALL="C.UTF-8"
+  - export LANG="en_US.UTF-8"
+  - export LANGUAGE="en_US.UTF-8"
