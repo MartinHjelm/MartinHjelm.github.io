@@ -5,7 +5,7 @@ title: About
 
 ![alt text](../me.png "Its me!")
 
-This blog focuses on programming related mistakes or technical problems I have fixed/solved so that anyone having the same specific problems might find a solution here via Google. I also blog inconsistently on machine learning and research related topics at [The NonConditional Beast](http://nonconditional.com).
+This blog focuses on all stupid programming related mistakes or technical problems I have fixed/solved so that anyone having the same specific problems might find a solution here via Google. I also blog inconsistently on machine learning and research related topics at [The NonConditional Beast](http://nonconditional.com).
 
 ### Contact
 Email: martinhjelm -- k t h . se  
