@@ -11,4 +11,4 @@ or on OSX
 
     pcregrep --color='auto' -n "[^\x00-\x7F]" _site/* 
 
-Or you can just do a regular expression search for[^\x00-\x7F] in your favorite editor.
+Or you can just do a regular expression search for [^\x00-\x7F] in your favorite editor.
