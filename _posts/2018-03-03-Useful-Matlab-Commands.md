@@ -34,7 +34,7 @@ It only looks for nan inf values that appears in your code and stops. Extremly u
 
 Once the script has stopped due to an error you can move up in the stack trace using,
 
- 	dbup
+	dbup
 
 and to continue running after an error has been raised you can just write,
 
